@@ -11,12 +11,12 @@ $$ LANGUAGE plpgsql;
 
 
 
-CREATE OR REPLACE FUNCTION get_contacts(limit_val INT, offset_val INT)
+CREATE OR REPLACE FUNCTION get_contacts(limit_val int, offset_val int)
 RETURNS TABLE(name VARCHAR, phone VARCHAR) AS $$
 BEGIN
     RETURN QUERY
-    SELECT name, phone
-    FROM phonebook
+    SELECT pb.name, pb.phone
+    FROM phonebook pb
     LIMIT limit_val OFFSET offset_val;
 END;
 $$ LANGUAGE plpgsql;
