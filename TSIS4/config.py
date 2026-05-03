@@ -1,0 +1,21 @@
+WIDTH = 800
+HEIGHT = 600
+CELL_SIZE = 20
+FPS = 10
+
+DB_NAME = "phonebook_db"
+DB_USER = "postgres"
+DB_PASSWORD = "122101"
+DB_HOST = "localhost"
+DB_PORT = "5432"
+
+WHITE = (255, 255, 255)
+BLACK = (20, 20, 20)
+GRAY = (90, 90, 90)
+GREEN = (0, 200, 80)
+RED = (220, 40, 40)
+DARK_RED = (120, 0, 0)
+BLUE = (60, 120, 255)
+YELLOW = (240, 210, 60)
+PURPLE = (160, 80, 220)
+ORANGE = (255, 150, 50)
